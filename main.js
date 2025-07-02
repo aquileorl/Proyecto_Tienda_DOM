@@ -203,41 +203,39 @@ products_section.appendChild(listadoProductos);
 //CREAMOS LAS CARTAS QUE CONFORMARÁN EL LISTADO DE PRODUCTOS
 
     function crearProductos(){
-    products.forEach(product => {
-    const li = document.createElement("li");
-    li.className = "card";
-    listadoProductos.appendChild(li);
 
-    const a = document.createElement("a");
-    a.href = product.link;
-    li.appendChild(a);
+        products.forEach(product => {
 
-    const img = document.createElement("img");
-    img.src = product.img;
-    a.appendChild(img);
+            const li = document.createElement("li");
+            li.className = "card";
+            listadoProductos.appendChild(li);
 
-    const h2 = document.createElement("h2");
-    h2.innerText = product.name;
-    li.appendChild(h2);
+            const a = document.createElement("a");
+            a.href = product.link;
+            li.appendChild(a);
 
-    const seller = document.createElement("p");
-    seller.innerText = product.seller;
-    li.appendChild(seller);
+            const img = document.createElement("img");
+            img.src = product.img;
+            a.appendChild(img);
 
-    const p = document.createElement("p");
-    p.innerText = product.price;
-    li.appendChild(p);
+            const h2 = document.createElement("h2");
+            h2.innerText = product.name;
+            li.appendChild(h2);
+
+            const seller = document.createElement("p");
+            seller.innerText = product.seller;
+            li.appendChild(seller);
+
+            const p = document.createElement("p");
+            p.innerText = product.price;
+            li.appendChild(p);
 })};
 
 crearProductos();
 
 
 
-
-
-
-
-/* SECCIÓN A LA IZQUIERDA DE LA WEB => LEFT-ASIDE */
+/* SECCIÓN de FILTRO A LA IZQUIERDA DE LA WEB => LEFT-ASIDE */
 
 const left_aside = document.createElement("aside");
 left_aside.className = "left-aside";
