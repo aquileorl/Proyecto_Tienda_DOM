@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    --background-color: #fffffe;
+    --headline:#272343;
+    --paragraph: #2d334a;
+    --button: #ffd803;
+    --button-text: #ffd803;
+
+    --highlight: #ffd803;
+    --secondary: #e3f6f5;
+    
+
+    --section-background: #e3f6f5;
+    --card-background: #fffffe;
+
+    font-family: 'rubik', 'sans-serif';
+    --border-radius: 7px;
+
+
+
+}
+
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-width: 1400px;
+    
+    
+}
+
+header {
+    background-color: var(--background-color);
+    padding: 30px;
+    text-align: center;
+    
+    
+}
+
+header  h1 {
+    color: var(--headline);
+    font-size:xx-large;
+    font-weight: 800;
+}
+
+header > h2 {
+    color: var(--paragraph);
+    
+}
+
+.nav-menu {
+    border-radius: var(--border-radius);
+    display: flex;
+    background-color: var(--highlight) ;
+    color: var(--paragraph);
+    font-weight: bold;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 10px;
+    font-weight: bold;
+
+    
+}
+
+.menu-info {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    flex: 60%;
+    
+ 
+}
+
+.menu-user {
+    
+    display: flex;  
+    flex-wrap: wrap;
+    flex: 40%;
+    align-items: end;
+    justify-content: end;
+
+}
+
+.nav-menu li {
+    list-style: none;
+    padding: 15px;
+    
+
+}
+
+header a {
+    text-decoration: none;
+    color: var(--paragraph);
+}
+
+
+.nav-menu a:hover {
+    color: var(--background-color);
+    
+}
+
+
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.logo2 {
+    width: 150px;
+    height: 150px;
+}
+
+.global-container {
+    
+    display: grid;
+    margin: 0 30px -0px 30px;
+    grid-template-areas: 
+    "description description"
+    "aside products"
+    "footer footer";
+
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr auto 1fr;
+    grid-gap: 15px;
+    justify-items: center;
+}
+
+.description {
+    background-color: var(--section-background);
+    border-radius: var(--border-radius);
+    padding: 20px;
+
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+
+.description {
+    grid-area: description;
+}
+
+
+
+.products-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+aside{
+    margin-top: 30px;
+    
+    width: fit-content;
+    padding: 30px;
+    
+}
+
+.left-aside {
+    grid-area: aside;
+    
+}
+
+footer {
+    grid-area: footer;
+}
+
+.products img {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    
+    background-color: var(--secondary);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+}
+
+.card h2 {
+    font-size: 1em;
+}
+
+aside h2 {
+    background-color: var(--highlight);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+
+}
+
+aside a {
+    text-decoration: none;
+    color: var(--paragraph);
+    font-weight: bold;
+}
+
+aside p {
+    text-decoration: none;
+    color: var(--paragraph);
+    font-weight: bold;
+}
+
+aside li {
+    padding: 5px;
+    
+}
+
+.category li {
+    padding: 0px;
+}
+
+footer {
+    background-color: var(--section-background);
+    text-align: center;
+    margin: 0 30px 0 30px;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+aside p:hover {
+    cursor: pointer;
+    background-color: var(--highlight);
+    border: var(--border-radius);
+}
+
+
+
+.social-media a:hover {
+    cursor: pointer;
+    color: var(--background-color);
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 0px var(--highlight);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.category {
+    background-color: var(--highlight);
+    padding: 20px;
+    border-radius: var(--border-radius);
+   
+    
+}
+
+.social-media {
+    background-color: var(--highlight);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin-top: 30px;
+    
+}
+
+.social-media h2 {
+    padding: 0;
+}
+
+.category h2 {
+    padding: 0;
+}
+
+
+.category p:hover {
+    color: var(--background-color);
+    
+}
+
+
+
+@media (max-width: 375px) {
+
+    .menu-info {
+        display: block;
+    }
+
+    .menu-user {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+        margin: 0 auto;
+    }
+
+    header {
+        display: block;
+        justify-content: center;
+        min-width: fit-content;
+    }
+
+    .global-container {
+        display: grid;
+        grid-template-areas: 
+        "description"
+        "products"
+        "aside";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        min-width: fit-content;
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    
+
+}
+
+@media (min-width:346px) and (max-width:768px) {
+
+    .logo {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+    }
+
+    .global-container {
+        display: grid;
+        grid-template-areas: 
+        "description"
+        "products"
+        "aside";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    .menu-info {
+        display: block;
+    }
+
+    .menu-user {
+        display: block;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1120px) {
+
+    .logo {
+        display: none;
+    }
+
+  
+
+    .global-container {
+        display: grid;
+        grid-template-areas: 
+        "description"
+        "products"
+        "aside";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    .header-logo {
+        display: block;
+    }
+
+    
+
+}
